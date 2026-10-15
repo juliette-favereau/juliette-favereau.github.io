@@ -3,117 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juliette Favereau - About</title>
+
+    <title>Juliette</title>
+
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="./images/icon2.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<div class="parallax-container">
-    <div class="parallax-bg"></div>
-</div>
+
+<canvas id="cayleyCanvas" aria-hidden="true"></canvas>
+<div class="background-noise" aria-hidden="true"></div>
+
 <nav class="navbar">
-    <div class="nav-brand">Juliette Favereau</div>
-    <div class="nav-links">
-        <a href="" class="active">About</a>
-        <a href="publications">Publications</a>
-        <a href="projects">Projects</a>
-        <a href="misc">Misc</a>
-    </div>
-    <div class="nav-toggle" id="navToggle">
+
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
+    </button>
+
+    <div class="nav-links" id="navLinks">
+        <a href="./" class="active">About</a>
+        <a href="publications/">Publications</a>
+
+        <a href="misc/">Misc</a>
     </div>
 </nav>
 
 <main>
-    <section class="intro-section fade-in-section">
-        <span class="typing-effect">
-        <h1>Hello, I'm <span class="highlight">Juliette Favereau </span></h1>
-        <p class="subtitle">PhD Student in mathematics and computer science</p>
-        </span>
-    </section>
+    <section class="hero">
 
-    <section class="about-section fade-in-section">
-        <h2>About</h2>
-        <p>I'm a PhD student whose main interests lie in discrete mathematics: discrete
-            dynamical systems, symbolic dynamics and tilings.</p>
+        <h1>
+            Hello, I’m<br>
+            <span class="highlight">   Juliette</span>
+        </h1>
 
-    </section>
-    <section class="about-section fade-in-section">
-        <h2>Contact</h2>
-        <p>You can reach me at: JulietteDOTfavereau9ATgmailDOTcom</p>
-    </section>
+        <p class="hero-text">
+            I am a PhD student under the supervision of <a href="https://theyssier.perso.math.cnrs.fr"
+                                                           target="_blank" class="text-link">Guillaume Theyssier</a> and
+            <a href="https://www.i2m.univ-amu.fr/perso/serge.troubetzkoy/"
+               target="_blank" class="text-link">Serge Troubetzkoy</a>
+            working at the intersection of
+            discrete mathematics and
+            theoretical computer science. Mainly, I do cellular automata over groups and graphs. The free group is in the background (both of my research and of this website).
+        </p>
+
+        <p class="hero-text">
+            Contact me at juliette dot favereau at univ-amu.fr.
+        </p>
 
 
-    <section class="internships-section fade-in-section">
-        <h2>Internships</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-date">2026</div>
-                <div class="timeline-content">
-                    <h3>Aix-Marseille University</h3>
-                    <p>Research intern with Pierre Guillon and Guillaume Theyssier</p>
-                    <ul>
-                        <li>
-                            We mainly work on extensions of our results with Ville Salo. We study
-                            the Kurka dichotomy on groups.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-date">2025</div>
-                <div class="timeline-content">
-                    <h3>University of Turku</h3>
-                    <p>Visiting researcher, working with Ville Salo</p>
-                    <ul>
-                        <li>Working on the arithmetical complexity of the sensitivity problem
-                            for cellular auJulietteata</li>
-                        <li>In our recent <a href="publications/CAsensitivity.pdf" target="_blank" style="color:#7289da;">preprint</a>,
-                            we answered Sablik and Theyssier's question, showing that the sensitivity problem is
-                            Pi^0_2-complete in one dimension and Sigma^0_3-complete in higher dimension.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">2024</div>
-                <div class="timeline-content">
-                    <h3>CEA (hight commision for nuclear energy)</h3>
-                    <p>Research engineer intern</p>
-                    <ul>
-                        <li>Study of a software for sodium/water reaction.</li>
-                        <li>Some difference on floating point operation with different version
-                            of libc <a href="publications/libcPortability.pdf" target="_blank"
-                                       style="color:#7289da;">here</a>.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">2023/2024</div>
-                <div class="timeline-content">
-                    <h3>LORIA/INRIA</h3>
-                    <p>Master 1 project at Mines Nancy Engineering school, working with Mathieu Hoyrup</p>
-                    <ul>
-                        <li>First experience in academic research.</li>
-                        <li>We develop a theory of local generation for tiling. In our first
-                            <a href="publications/localGenerationOfTilings.pdf" target="_blank" style="color:#7289da;">preprint</a>,
-                            we developed tools to prove that a subshift is or is not locally generable.
-                            In our second <a href="publications/localGenOfEvenBicTileset.pdf" target="_blank" style="color:#7289da;">preprint</a>,
-                            we used those tools to classify even bicolor tilesets.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+
     </section>
 
 
 </main>
 
-<footer>
-    <p>&copy; 2024 Juliette Favereau. Feel free to copy.</p>
-</footer>
+
 
 <script src="script.js"></script>
 </body>

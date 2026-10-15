@@ -2,25 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juliette Favereau - Projects</title>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+    <title>Ju's Projects</title>
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="../images/icon2.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
 </head>
+
 <body>
+<canvas id="cayleyCanvas"></canvas>
+<div class="background-noise"></div>
+
 <nav class="navbar">
-    <div class="nav-brand">Juliette Favereau</div>
-    <div class="nav-links">
+
+
+    <div class="nav-links" id="navLinks">
         <a href="../">About</a>
         <a href="../publications">Publications</a>
-        <a href="" class="active">Projects</a>
+        <a href="./" class="active">Projects</a>
         <a href="../misc">Misc</a>
     </div>
-    <div class="nav-toggle" id="navToggle">
+
+    <button
+            class="nav-toggle"
+            id="navToggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+    >
         <span></span>
         <span></span>
         <span></span>
-    </div>
+    </button>
 </nav>
 
 <main>
@@ -28,153 +47,161 @@
         <h1>Projects</h1>
     </section>
 
-
-
-
-    <section class="projects-list">
-        <!-- AOC -->
-        <div class="project-card">
+    <section class="projects-list" aria-label="Projects">
+        <article class="project-card">
             <div class="project-content">
-                <h3>Advent of code</h3>
-                <div class="project-tags">
+                <h2>Advent of Code</h2>
+
+                <div class="project-tags" aria-label="Technologies">
                     <span class="tag">Python</span>
-                    <span class="tag">Golang</span>
-                    <span class="tag">Ocaml</span>
+                    <span class="tag">Go</span>
+                    <span class="tag">OCaml</span>
                 </div>
+
                 <p class="project-description">
-                    Advent of Code is a series of daily programming challenges released during
-                    December. I participate each year since 2023, solving problems in real-time
-                    using Python or Go. All my solutions are available on my GitHub repository,
-                    documenting my progress through these calendar.
+                    Advent of Code is a series of daily programming
+                    challenges released every December. I have participated
+                    since 2023, solving problems in real time using Python,
+                    Go, and OCaml. My solutions are collected in a GitHub
+                    repository documenting my progress through the yearly
+                    challenges.
                 </p>
+
                 <div class="project-links">
-                    <a href="https://github.com/juliette-favereau/advent_of_code" target="_blank" class="btn btn-primary">
-                        <i class="fab fa-github"></i> GitHub
+                    <a
+                            href="https://github.com/juliette-favereau/advent_of_code"
+                            target="_blank"
+                            class="button button-primary"
+                    >
+                        GitHub
                     </a>
                 </div>
             </div>
-        </div>
+        </article>
 
-            <!-- SRP -->
-        <div class="project-card">
+        <article class="project-card">
             <div class="project-content">
-                <h3>SRP-3 Formalisation</h3>
-                <div class="project-tags">
+                <h2>SRP-3 Formalisation</h2>
+
+                <div class="project-tags" aria-label="Technologies">
                     <span class="tag">ProVerif</span>
+                    <span class="tag">Security protocol</span>
                 </div>
 
                 <p class="project-description">
-                    Secure Remote Password (SRP-3) is a protocol used for authentication and
-                    for establishing a session key, designed to be robust against dictionary
-                    attacks. We provide a ProVerif model and show that, under our model, the
-                    protocol satisfies the desired security properties.
+                    Secure Remote Password (SRP-3) is an authentication and
+                    session-key establishment protocol designed to resist
+                    dictionary attacks. This project provides a ProVerif
+                    model and verifies that, under this model, the protocol
+                    satisfies the intended security properties.
                 </p>
 
                 <div class="project-links">
-                    <a href="https://github.com/tom-favereau/proverif-modelisation-SRP-3" target="_blank" class="btn btn-primary">
-                        <i class="fab fa-github"></i> GitHub
+                    <a
+                            href="https://github.com/tom-favereau/proverif-modelisation-SRP-3"
+                            target="_blank"
+                            class="button button-primary"
+                    >
+                        GitHub
                     </a>
                 </div>
             </div>
-        </div>
+        </article>
 
-        <!-- FAT32 -->
-        <div class="project-card">
-            <!--
-            <div class="project-image">
-                <div class="project-placeholder"></div>
-            </div>
-            -->
+        <article class="project-card">
             <div class="project-content">
-                <h3>FAT32</h3>
-                <div class="project-tags">
+                <h2>FAT32 File System Emulator</h2>
+
+                <div class="project-tags" aria-label="Technologies">
                     <span class="tag">Java</span>
                     <span class="tag">JavaFX</span>
                     <span class="tag">File system</span>
                 </div>
+
                 <p class="project-description">
-                    A FAT32 file system emulator implemented in Java, featuring both command-line
-                    and graphical interfaces. The shell component supports essential commands
-                    (ls, cd, cat, echo, etc) for file system navigation and manipulation. The graphical
-                    interface, built with JavaFX, provides a file explorer and includes utilities
-                    such as a disk fragmentation visualizer. The emulator implements core FAT32
-                    functionalities including file reading/writing, directory management, and disk
-                    formatting operations.
+                    A FAT32 file system emulator implemented in Java, with
+                    both command-line and graphical interfaces. The shell
+                    supports commands such as ls,
+                    cd, cat, and
+                    echo. The JavaFX interface provides a file
+                    explorer, a disk fragmentation visualizer, and tools for
+                    file management and disk formatting.
                 </p>
+
                 <div class="project-links">
-                    <a href="https://github.com/juliette-favereau/FAT32" target="_blank" class="btn btn-primary">
-                        <i class="fab fa-github"></i> GitHub
+                    <a
+                            href="https://github.com/juliette-favereau/FAT32"
+                            target="_blank"
+                            class="button button-primary"
+                    >
+                        GitHub
                     </a>
-                    <!--<a href="#" class="btn btn-secondary">Demo</a>-->
                 </div>
             </div>
-        </div>
+        </article>
 
-        <!-- JPEG -->
-        <div class="project-card">
-            <!--
-            <div class="project-image">
-                <div class="project-placeholder"></div>
-            </div>
-            -->
+        <article class="project-card">
             <div class="project-content">
-                <h3>JPEG Decoder</h3>
-                <div class="project-tags">
+                <h2>JPEG Decoder</h2>
+
+                <div class="project-tags" aria-label="Technologies">
                     <span class="tag">C++</span>
                     <span class="tag">DCT</span>
-                    <span class="tag">Lossy compression</span>
+                    <span class="tag">Compression</span>
                 </div>
+
                 <p class="project-description">
-                    A JPEG decoder implementation that converts compressed JPEG files into raw
-                    image data. The project handles the core JPEG decoding pipeline:
-                    Huffman decoding, dequantization, inverse Discrete Cosine Transform (IDCT),
-                    and color space conversion from YCbCr to RGB. The decoder processes baseline
-                    JPEG images, reading compressed data and outputting the decoded pixel
-                    information.
+                    A JPEG decoder that converts compressed JPEG images into
+                    raw pixel data. It implements the main steps of the
+                    baseline JPEG decoding pipeline: Huffman decoding,
+                    dequantization, inverse discrete cosine transform
+                    (IDCT), and conversion from YCbCr to RGB.
                 </p>
+
                 <div class="project-links">
-                    <a href="https://github.com/juliette-favereau/file_compression_cpp" target="_blank"
-                       class="btn btn-primary">
-                        <i class="fab fa-github"></i> GitHub
+                    <a
+                            href="https://github.com/juliette-favereau/file_compression_cpp"
+                            target="_blank"
+                            class="button button-primary"
+                    >
+                        GitHub
                     </a>
-                    <!--
-                    <a href="https://github.com/juliette-favereau/file_compression_cpp" class="btn btn-secondary">Live Demo</a>
-                    -->
                 </div>
             </div>
-        </div>
+        </article>
 
-
-        <!-- Music player -->
-        <div class="project-card">
+        <article class="project-card">
             <div class="project-content">
-                <h3>Music player</h3>
-                <div class="project-tags">
+                <h2>Music Player</h2>
+
+                <div class="project-tags" aria-label="Technologies">
                     <span class="tag">Python</span>
-                    <span class="tag">TKinter</span>
+                    <span class="tag">Tkinter</span>
                 </div>
+
                 <p class="project-description">
-                    A music player application developed in Python that combines playback and
-                    YouTube download capabilities. The application utilizes PyTube library for
-                    downloading audio from YouTube videos, converting them into music files.
-                    Features include basic music player controls and a download function that
-                    allows users to save music directly from YouTube links.
+                    A Python music player combining basic playback controls
+                    with audio downloading functionality. The application
+                    uses PyTube to retrieve audio from YouTube links and
+                    save it as music files, while providing a simple desktop
+                    interface for managing playback.
                 </p>
+
                 <div class="project-links">
-                    <a href="https://github.com/juliette-favereau/music_player" target="_blank"
-                       class="btn btn-primary">
-                        <i class="fab fa-github"></i> GitHub
+                    <a
+                            href="https://github.com/juliette-favereau/music_player"
+                            target="_blank"
+                            class="button button-primary"
+                    >
+                        GitHub
                     </a>
                 </div>
             </div>
-        </div>
-
+        </article>
     </section>
 </main>
 
-<footer>
-    <p>&copy; 2024 Juliette Favereau. Feel free to copy.</p>
-</footer>
+
 
 <script src="../script.js"></script>
 </body>

@@ -2,24 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juliette Favereau - Publications</title>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+    <title>Ju's Publications</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="../images/icon2.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
 </head>
+
 <body>
+<canvas id="cayleyCanvas"></canvas>
+<div class="background-noise"></div>
+
 <nav class="navbar">
-    <div class="nav-brand">Juliette Favereau</div>
-    <div class="nav-links">
+
+
+    <div class="nav-links" id="navLinks">
         <a href="../">About</a>
-        <a href="" class="active">Publications</a>
-        <a href="../projects">Projects</a>
+        <a href="./" class="active">Publications</a>
+
         <a href="../misc">Misc</a>
     </div>
-    <div class="nav-toggle" id="navToggle">
+
+    <button
+            class="nav-toggle"
+            id="navToggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+    >
         <span></span>
         <span></span>
         <span></span>
-    </div>
+    </button>
 </nav>
 
 <main>
@@ -28,74 +48,155 @@
     </section>
 
 
-    <section class="publications-list">
-        <!-- Desc complexity of sens of CA -->
-        <div class="pub-card">
+    <section class="publications-list" aria-label="Publications">
+        <!-- 2026 -->
+        <article class="pub-card">
             <div class="pub-year">2025</div>
+
             <div class="pub-content">
-                <h3>Descriptive Complexity of Sensitivity of Cellular Automata</h3>
-                <p class="pub-authors">Juliette Favereau, Ville Salo</p>
-                <p class="pub-journal">preprint</p>
-                <p class="pub-abstract">
-                    We study the computational complexity of determining whether a cellular
-                    automaton is sensitive to initial conditions. We show that this problem is
-                    Pi^0_2-complete in dimension 1 and Sigma^0_3-complete in dimension 2 and
-                    higher. This solves a question posed by Sablik and Theyssier.
+                <h2>
+                    Complexité descriptive des classes de Kurka sur les groupes
+                </h2>
+
+                <p class="pub-authors">
+                    Juliette Favereau
                 </p>
+
+                <p class="pub-journal">Master Thesis</p>
+
+                <p class="pub-abstract">
+                    We study the computational complexity of Kurka classes over groups, with a focus on F2
+                    and non ammenable groups. This was done under the supervision of Guillaume Theyssier and
+                    Pierre Guillon. The document is in French.
+
+                </p>
+
                 <div class="pub-links">
-                    <a href="CAsensitivity.pdf" target="_blank" class="btn btn-primary">Read Paper</a>
-                    <!--<a href="#" class="btn btn-secondary">DOI</a>-->
+                    <a
+                            href="memoire.pdf"
+                            target="_blank"
+                            class="button button-primary"
+                    >
+                        Read paper
+                    </a>
                 </div>
             </div>
-        </div>
+        </article>
 
-        <!-- local generation of tiling : even bicolor tileset -->
-        <div class="pub-card">
-            <div class="pub-year">2024</div>
+
+        <!-- 2025 -->
+        <article class="pub-card">
+            <div class="pub-year">2025</div>
+
             <div class="pub-content">
-                <h3>Local generation of tilings: the even bicolor Wang tilesets</h3>
-                <p class="pub-authors">Juliette Favereau, Mathieu Hoyrup</p>
-                <p class="pub-journal">preprint</p>
-                <p class="pub-abstract">
-                    In this article, we apply the techniques developed in our previous article
-                    “Local generation of tilings”, in which we introduced two definitions capturing
-                    the intuitive idea that some subshifts admit a procedure that can generate any
-                    tiling and working in a local way. We classify all the Wang tilesets with
-                    two colors in which each tile has an even number of each color.
+                <h2>
+                    Descriptive Complexity of Sensitivity of Cellular
+                    Automata
+                </h2>
+
+                <p class="pub-authors">
+                    Juliette Favereau, Ville Salo
                 </p>
+
+                <p class="pub-journal">AUTOMATA 2025</p>
+
+                <p class="pub-abstract">
+                    We study the computational complexity of determining
+                    whether a cellular automaton is sensitive to initial
+                    conditions. We show that this problem is
+                    Pi<sup>0</sup><sub>2</sub>-complete in dimension 1 and
+                    Sigma<sup>0</sup><sub>3</sub>-complete in dimension 2
+                    and higher. This solves a question posed by Sablik and
+                    Theyssier.
+                </p>
+
                 <div class="pub-links">
-                    <a href="localGenOfEvenBicTileset.pdf" target="_blank" class="btn btn-primary">Read Paper</a>
-                    <!--<a href="#" class="btn btn-secondary">DOI</a>-->
+                    <a
+                            href="CAsensitivity.pdf"
+                            target="_blank"
+                            class="button button-primary"
+                    >
+                        Read paper
+                    </a>
                 </div>
             </div>
-        </div>
+        </article>
 
-        <!-- Local generation of tiling -->
-        <div class="pub-card">
+        <!-- 2024 -->
+        <article class="pub-card">
             <div class="pub-year">2024</div>
+
             <div class="pub-content">
-                <h3>Local generation of tilings</h3>
-                <p class="pub-authors">Juliette Favereau, Mathieu Hoyrup</p>
-                <p class="pub-journal">preprint</p>
+                <h2>
+                    Local Generation of Tilings: The Even Bicolor Wang
+                    Tilesets
+                </h2>
+
+                <p class="pub-authors">
+                    Juliette Favereau, Mathieu Hoyrup
+                </p>
+
+                <p class="pub-journal">Preprint</p>
+
                 <p class="pub-abstract">
-                    In this article, we investigate the possibility of generating all the
-                    configurations of a subshift in a local way. We propose two definitions
-                    of local generation, explore their properties and develop techniques to
-                    determine whether a subshift satisfies these definitions. We illustrate
+                    In this article, we apply the techniques developed in
+                    our previous article, “Local Generation of Tilings,” in
+                    which we introduced two definitions capturing the idea
+                    that some subshifts admit a procedure able to generate
+                    any tiling in a local way. We classify all Wang
+                    tilesets with two colors in which each tile has an even
+                    number of each color.
+                </p>
+
+                <div class="pub-links">
+                    <a
+                            href="localGenOfEvenBicTileset.pdf"
+                            target="_blank"
+                            class="button button-primary"
+                    >
+                        Read paper
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- 2024 -->
+        <article class="pub-card">
+            <div class="pub-year">2024</div>
+
+            <div class="pub-content">
+                <h2>Local Generation of Tilings</h2>
+
+                <p class="pub-authors">
+                    Juliette Favereau, Mathieu Hoyrup
+                </p>
+
+                <p class="pub-journal">Ergodic Theory and Dynamical Systems</p>
+
+                <p class="pub-abstract">
+                    We investigate the possibility of generating all
+                    configurations of a subshift in a local way. We propose
+                    two definitions of local generation, explore their
+                    properties, and develop techniques to determine whether
+                    a subshift satisfies these definitions. We illustrate
                     the results with several examples.
                 </p>
+
                 <div class="pub-links">
-                    <a href="localGenerationOfTilings.pdf" target="_blank" class="btn btn-primary">Read Paper</a>
-                    <!--<a href="#" class="btn btn-secondary">DOI</a>-->
+                    <a
+                            href="localGenerationOfTilings.pdf"
+                            target="_blank"
+                            class="button button-primary"
+                    >
+                        Read paper
+                    </a>
                 </div>
             </div>
-        </div>
+        </article>
     </section>
 </main>
 
-<footer>
-    <p>&copy; 2024 Juliette Favereau. Feel free to copy.</p>
-</footer>
+
 
 <script src="../script.js"></script>
 </body>

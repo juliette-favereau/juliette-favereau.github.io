@@ -2,55 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juliette Favereau - Misc</title>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+    <title>Misc</title>
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="../images/icon2.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
 </head>
+
 <body>
+<canvas id="cayleyCanvas"></canvas>
+<div class="background-noise"></div>
+
 <nav class="navbar">
-    <div class="nav-brand">Juliette Favereau</div>
-    <div class="nav-links">
+
+
+    <div class="nav-links" id="navLinks">
         <a href="../">About</a>
         <a href="../publications">Publications</a>
-        <a href="../projects">Projects</a>
-        <a href="" class="active">Misc</a>
+
+        <a href="./" class="active">Misc</a>
     </div>
-    <div class="nav-toggle" id="navToggle">
+
+    <button
+            class="nav-toggle"
+            id="navToggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+    >
         <span></span>
         <span></span>
         <span></span>
-    </div>
+    </button>
 </nav>
-<main class="content-container">
+
+<main>
     <section class="page-header">
         <h1>Some cool things</h1>
     </section>
-    <section class="cool-stuff">
-        <ul class="cool-stuff-list">
-            <li>
+
+    <section class="misc-list" aria-label="Miscellaneous resources">
+        <article class="misc-card">
+            <span class="misc-number"></span>
+
+            <div class="misc-content">
+                <h2>Advent of code</h2>
+
                 <p>
-                    <a href="SRP3.pdf" target="_blank">Here</a> a formalisation of the SRP-3 protocol
-                    using ProVerif. This was done with my fellows from SIRAV.
+                    Each year I do the advent of code, that's fun. I used to do in go but nowadays, I use python.
                 </p>
 
-            </li>
+                <a
+                        href="https://github.com/juliette-favereau/advent_of_code"
+                        target="_blank"
+                        class="button button-primary"
+                >
+                    My solution
+                </a>
+            </div>
+        </article>
 
-        </ul>
-    </section>
-    <section class="cool-stuff">
-        <ul class="cool-stuff-list">
-            <li>
-                <p> <a href="ca.html">Here</a> a one dimensional cellular automaton which is sensitive to initial condition
-                    if and only if twin prime conjecture holds.</p>
-            </li>
+        <article class="misc-card">
+            <span class="misc-number"></span>
 
-        </ul>
+            <div class="misc-content">
+                <h2>W4N4D31</h2>
+
+                <p>
+                    A "malware" that is you have to find the password or patch the binary so that it print "you won".
+                    It works on Windows xp. Email me to get the password.
+                </p>
+
+                <a
+                        href="W4N4D1E.exe"
+                        download="W4N4D1E.exe"
+                        target="_blank"
+                        class="button button-primary"
+                >
+                    Get malware
+                </a>
+
+                <a
+                        href="w4n4d31.pdf"
+                        target="_blank"
+                        class="button button-primary"
+                >
+                    PDF
+                </a>
+            </div>
+        </article>
+
+        <article class="misc-card">
+            <span class="misc-number"></span>
+
+            <div class="misc-content">
+                <h2>SRP-3 Formalisation</h2>
+
+                <p>
+                    A formalisation of the SRP-3 protocol using ProVerif,
+                    produced with fellow students from SIRAV.
+                </p>
+
+                <a
+                        href="SRP3.pdf"
+                        target="_blank"
+                        class="button button-primary"
+                >
+                    PDF
+                </a>
+            </div>
+        </article>
+
+        <article class="misc-card">
+            <span class="misc-number"></span>
+
+            <div class="misc-content">
+                <h2>Cellular Automaton and Twin Primes</h2>
+
+                <p>
+                    A one-dimensional cellular automaton that is sensitive
+                    to initial conditions if and only if the twin prime
+                    conjecture holds.
+                </p>
+
+                <a
+                        href="ca.html"
+                        class="button button-primary"
+                >
+                    automaton
+                </a>
+            </div>
+        </article>
     </section>
 </main>
 
-<footer>
-    <p>&copy; 2024 Juliette Favereau. Feel free to copy.</p>
-</footer>
+
+
+<script src="../script.js"></script>
 </body>
 </html>
