@@ -83,7 +83,7 @@ a {
 
 .navbar {
     position: relative;
-    z-index: 2;
+    z-index: 1000;
 
     display: flex;
     align-items: center;
