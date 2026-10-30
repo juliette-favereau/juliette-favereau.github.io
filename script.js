@@ -46,8 +46,10 @@ function buildGraph() {
 
     const centreX = width * 0.76;
     const centreY = height * 0.43;
-    const maxRadius = Math.max(width, height) * 0.69;
+    const maxRadius = Math.max(width, height) * 0.70;
+    //const maxRadius = Math.max(width, height) * 0.80;
     const maxDepth = width < 700 ? 4 : 5;
+    //const maxDepth = width < 700 ? 5 : 6
 
     const root = {
         word: "",
@@ -90,7 +92,6 @@ function buildGraph() {
 
             nodes.push(child);
 
-            /* Keep small gaps between descendant branches. */
             const padding = portion * 0.08;
 
             addChildren(
@@ -105,10 +106,8 @@ function buildGraph() {
 }
 
 function draw() {
-    /* Transparent canvas: CSS supplies the pure black background. */
     ctx.clearRect(0, 0, width, height);
 
-    /* Draw edges first. */
     nodes.forEach((node) => {
         if (!node.parent) {
             return;
@@ -129,7 +128,6 @@ function draw() {
         ctx.stroke();
     });
 
-    /* Draw vertices after the edges. */
     nodes.forEach((node) => {
         const radius =
             node.depth === 0
@@ -157,7 +155,6 @@ function draw() {
 
 window.addEventListener("resize", resizeCanvas);
 
-/* ---------- Mobile navigation ---------- */
 
 const navToggle = document.getElementById("navToggle");
 const navLinks = document.getElementById("navLinks");
@@ -180,6 +177,5 @@ if (navToggle && navLinks) {
     });
 }
 
-/* ---------- Start ---------- */
 
 resizeCanvas();

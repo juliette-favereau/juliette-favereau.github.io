@@ -53,12 +53,6 @@ a {
     color: var(--bg);
 }
 
-/* ---------- Cayley graph background ---------- */
-
-/*
-  Keep the graph behind the text, but above the page background.
-  This avoids the canvas disappearing behind body.
-*/
 
 #cayleyCanvas {
     position: fixed;
